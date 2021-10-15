@@ -1,10 +1,34 @@
 package com.company;
 
-
 public class Autovehicul {
+    private static final int AN_DE_FABRICATIE = 2010;
+
     private String marca;
     private String culoare;
     private int vitezaCurenta;
+    private int treaptaDeVitezaCurenta;
+    private int vitezaMaxima;
+    private int nrTrepteDisponibile;
+    private Sofer sofer;
+    private Rezervor rezervor;
+
+
+    public void setSofer(Sofer sofer) {
+        this.sofer = sofer;
+    }
+
+    public Sofer getSofer() {
+        return sofer;
+    }
+
+
+    public Rezervor getRezervor() {
+        return rezervor;
+    }
+
+    public void setRezervor(Rezervor rezervor) {
+        this.rezervor = rezervor;
+    }
 
     @Override
     public String toString() {
@@ -17,9 +41,6 @@ public class Autovehicul {
                 ;
     }
 
-    private int treaptaDeVitezaCurenta;
-    private int vitezaMaxima;
-    private int nrTrepteDisponibile;
 
     public Autovehicul (String marca, String culoare, int vitezaCurenta, int treaptaDeVitezaCurenta, int vitezaMaxima, int nrTrepteDisponibile){
         this.setMarca(marca);

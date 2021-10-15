@@ -19,37 +19,43 @@ public class TestDrive {
         System.out.println("5. Oprire");
 
         Scanner scanner = new Scanner (System.in);
-        int optiune = scanner.nextInt();
+
+        boolean check = false;
+        do{
+            int optiune = scanner.nextInt();
             switch (optiune) {
-                case 1:
+                case 1 -> {
                     kilometriiParcursi++;
-                    masina1.setVitezaCurenta(masina1.getVitezaCurenta()+1);
+                    masina1.setVitezaCurenta(masina1.getVitezaCurenta() + 1);
                     System.out.println("Noua stare este ");
                     afisareStareCurenta(masina1);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     kilometriiParcursi++;
-                    masina1.setVitezaCurenta(masina1.getVitezaCurenta()-1);
+                    masina1.setVitezaCurenta(masina1.getVitezaCurenta() - 1);
                     System.out.println("Noua stare este ");
                     afisareStareCurenta(masina1);
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     kilometriiParcursi++;
                     masina1.setTreaptaDeVitezaCurenta(2);
                     System.out.println("Noua stare este ");
                     afisareStareCurenta(masina1);
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     kilometriiParcursi++;
                     System.out.println("Kilometrii parcursi: " + kilometriiParcursi);
                     System.out.println("Noua stare este ");
                     afisareStareCurenta(masina1);
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     System.out.println("Masina a fost oprita!");
-                    break;
+                    check = true;
+                }
             }
-        }
+        } while (!check);
+    }
+
 
     private static void afisareStareCurenta(Autovehicul s) {
         System.out.println(s);

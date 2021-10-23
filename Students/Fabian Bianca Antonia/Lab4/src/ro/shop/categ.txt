@@ -1,0 +1,5 @@
+dairy
+sweets
+fruits
+vegetables
+books

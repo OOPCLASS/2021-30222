@@ -1,0 +1,8 @@
+Ananas; 7; 1.99; fructe
+Banana; 10; 2.99; fructe
+Morcovi; 5; 2.49; legume
+Ciocolata cu lapte si alune Milka 100g; 0; 3.69; dulciuri
+Sampanie Veuve Clicquot Brut, 0.75L in cutie pentru cadou; 2; 275; alcool
+Sampanie Moet&Chandon Ice Imperial, alcool 12%, 0.75L; 10; 309.99; alcool
+Laptop HP 15s-eq2025nq, procesor AMD Ryzen 5 5500U, ecran 15.6 Full HD, 8GB Ram, 256GB SSD, AMD Radeon Graphics, Free DOS, Silver; 10; 2499.9; it
+Mouse gaming Varr VGMV03; 1000; 59.9; it
